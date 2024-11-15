@@ -24,7 +24,7 @@ def get_spy_data():
 
 # Load the CSV data and fetch SPY data
 # file_path = 'sample_daily_financial_data.csv'
-file_path = '/dashboard.csv'
+file_path = 'dashboard.csv'
 df = pd.read_csv(file_path)
 df['Date'] = pd.to_datetime(df['Date'])
 
