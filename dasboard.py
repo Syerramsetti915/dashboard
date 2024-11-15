@@ -10,6 +10,7 @@ from dash.dependencies import Input, Output, State
 
 # Initialize the Dash app first
 app = dash.Dash(__name__)
+server = app.server
 
 # Fetch SPY data using yfinance
 def get_spy_data():
