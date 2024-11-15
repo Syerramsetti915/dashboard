@@ -1,0 +1,280 @@
+/* General styles for dark mode */
+.dark-mode {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    transition: all 0.3s ease;
+}
+
+/* Style for the page content in dark mode */
+.dark-mode #page-content {
+    background-color: #000000 !important;
+}
+
+/* Style for chart containers in dark mode */
+.dark-mode .chart-container {
+    background-color: #000000 !important;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Style the outer container in dark mode */
+.dark-mode > div {
+    background-color: #000000 !important;
+}
+
+/* Style dropdowns */
+.dark-mode .dropdown .Select-control {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-color: #333333 !important;
+}
+
+.dark-mode .dropdown .Select-menu-outer {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 1px solid #333333 !important;
+}
+
+.dark-mode .dropdown .Select-option {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .dropdown .Select-option.is-focused {
+    background-color: #333333 !important;
+}
+
+/* Style the toggle button */
+.dark-mode .toggle-button {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2),
+                0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .toggle-button:hover {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3),
+                0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Style the left and right side containers */
+.dark-mode .left-side, .dark-mode .right-side {
+    background-color: #000000 !important;
+}
+
+/* Style graphs */
+.dark-mode .dash-graph {
+    background-color: #000000 !important;
+}
+
+/* Ensure text in charts is white */
+.dark-mode text {
+    fill: #ffffff !important;
+}
+
+/* Style axis labels and titles in charts */
+.dark-mode .main-svg .xtick > text,
+.dark-mode .main-svg .ytick > text,
+.dark-mode .main-svg .xlabel,
+.dark-mode .main-svg .ylabel,
+.dark-mode .main-svg .title {
+    fill: #ffffff !important;
+}
+
+/* Style the body to prevent background color flickering */
+body {
+    background-color: #000000;
+}
+
+.dark-mode body {
+    background-color: #000000 !important;
+}
+
+/* Style for the toggle button in both light and dark modes */
+.toggle-button {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1000;
+    /* Enhanced shadow for better visibility in light mode */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2),
+                0 0 0 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the toggle button */
+.toggle-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3),
+                0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode specific styles for the toggle button */
+.dark-mode .toggle-button {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2),
+                0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .toggle-button:hover {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3),
+                0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Dropdown styling for dark mode */
+.dark-mode .Select-control {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-color: #333333 !important;
+}
+
+.dark-mode .Select-menu-outer {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 1px solid #333333 !important;
+}
+
+.dark-mode .Select-value-label {
+    color: #ffffff !important;
+}
+
+.dark-mode .Select-option {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .Select-option:hover {
+    background-color: #333333 !important;
+}
+
+/* Style for the dropdown input */
+.dark-mode .Select-input > input {
+    color: #ffffff !important;
+}
+
+/* Style for the placeholder */
+.dark-mode .Select-placeholder {
+    color: #888888 !important;
+}
+
+
+/* Move filter bar to background */
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner input:not([type=radio]):not([type=checkbox]) {
+    z-index: 0 !important;
+}
+
+/* Keep title on top */
+.gtitle {
+    z-index: 1000 !important;
+} 
+
+/* Keyframes for vertical fill animation */
+@keyframes fillBarVertical {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for different animations */
+@keyframes growUp {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%) scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scaleY(1); 
+        opacity: 1;
+    }
+}
+
+@keyframes bounceUp {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    70% {
+        transform: scaleY(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scaleY(0.3);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+/* Apply diagonal skew to each bar */
+.js-plotly-plot .plotly .bars path {
+    transform-origin: bottom;
+    transform-box: fill-box;
+    will-change: transform;
+    transform: scaleY(0) skewX(-20deg); /* Adjust -20deg as needed for the diagonal effect */
+    opacity: 0;
+}
+
+/* Apply different animations to each bar (keep the existing animations) */
+.js-plotly-plot .plotly .bars path:nth-child(1) {
+    animation: growUp 0.8s ease-out forwards;
+    animation-delay: 0s;
+    transform: skewX(-20deg); /* Ensures diagonal effect is preserved during animation */
+}
+
+.js-plotly-plot .plotly .bars path:nth-child(2) {
+    animation: slideUp 0.8s ease-in-out forwards;
+    animation-delay: 0.2s;
+    transform: skewX(-20deg); /* Ensures diagonal effect is preserved during animation */
+}
+
+.js-plotly-plot .plotly .bars path:nth-child(3) {
+    animation: bounceUp 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    animation-delay: 0.4s;
+    transform: skewX(-20deg); /* Ensures diagonal effect is preserved during animation */
+}
+
+.js-plotly-plot .plotly .bars path:nth-child(4) {
+    animation: fadeIn 0.8s ease-in forwards;
+    animation-delay: 0.6s;
+    transform: skewX(-20deg); /* Ensures diagonal effect is preserved during animation */
+}
+
+.js-plotly-plot .plotly .bars path:nth-child(5) {
+    animation: growUp 0.8s ease-in-out forwards;
+    animation-delay: 0.8s;
+    transform: skewX(-20deg); /* Ensures diagonal effect is preserved during animation */
+}
